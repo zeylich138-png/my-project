@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="?android:attr/windowBackground">
+
+    <TextView
+        android:id="@+id/tvCounter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Вопрос 1 из 20"
+        android:textColor="?android:attr/textColorSecondary"
+        android:textSize="14sp"
+        android:gravity="center" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:max="100"
+        android:progress="5" />
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Текст вопроса"
+        android:textColor="?android:attr/textColorPrimary"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:padding="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/btnContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button android:id="@+id/btn5" android:layout_width="match_parent" android:layout_height="55dp" android:text="Полностью согласен (5)" android:layout_marginBottom="5dp" android:backgroundTint="#4CAF50"/>
+        <Button android:id="@+id/btn4" android:layout_width="match_parent" android:layout_height="55dp" android:text="Скорее согласен (4)" android:layout_marginBottom="5dp" android:backgroundTint="#8BC34A"/>
+        <Button android:id="@+id/btn3" android:layout_width="match_parent" android:layout_height="55dp" android:text="Трудно сказать (3)" android:layout_marginBottom="5dp" android:backgroundTint="#FFC107"/>
+        <Button android:id="@+id/btn2" android:layout_width="match_parent" android:layout_height="55dp" android:text="Скорее не согласен (2)" android:layout_marginBottom="5dp" android:backgroundTint="#FF9800"/>
+        <Button android:id="@+id/btn1" android:layout_width="match_parent" android:layout_height="55dp" android:text="Полностью не согласен (1)" android:layout_marginBottom="10dp" android:backgroundTint="#F44336"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="← Назад"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        style="@style/Widget.MaterialComponents.Button.TextButton"/>
+
+</LinearLayout>
